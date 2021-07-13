@@ -1,0 +1,65 @@
+/* ! Palette de couleur à respecter : https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+/* 
+ * rouge : #d90429
+ * imperial red : #EF233C
+ * alice blue : #EDF2F4
+ * light gray : #8D99AE
+ * space cadet : #2B2D42
+ 
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! Header */
+
+h1 {
+  color: #d90429;
+}
+
+/* ? Permet de changerla couleur du lien avec la classe "active" */
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #d90429;
+}
+
+/* * Hover */
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ef233c;
+}
+
+h1:hover {
+  color: #ef233c;
+  zoom: 1.1;
+}
+
+/* ! Fin Header */
+
+/* ! Main */
+main {
+  background-color: #8d99ae;
+  color: #2b2d42;
+  height: 400px;
+}
+/* ! Fin Main */
+/* ! Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* ? me permet d'aligner l'icone avec le texte qui le suit */
+.copyright {
+  vertical-align: bottom;
+}
+
+/* ! Fin Footer */
