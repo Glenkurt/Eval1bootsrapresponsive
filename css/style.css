@@ -8,6 +8,10 @@
  
 */
 
+
+/* ! @IMPORT  POLICES */
+
+
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +22,7 @@ body {
 
 h1 {
   color: #d90429;
+  font-size: 1.2rem;
 }
 
 /* ? Permet de changerla couleur du lien avec la classe "active" */
@@ -28,6 +33,11 @@ h1 {
   color: #d90429;
 }
 
+header  .material-icons {
+ color: #d90429;
+ float: right;
+ margin: 0.7rem;
+}
 /* * Hover */
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -37,8 +47,10 @@ h1 {
 
 h1:hover {
   color: #ef233c;
-  zoom: 1.1;
+/* zoom: 1.1;*/
 }
+
+
 
 /* ! Fin Header */
 
@@ -46,7 +58,8 @@ h1:hover {
 main {
   background-color: #8d99ae;
   color: #2b2d42;
-  height: 400px;
+  height: 600px;
+ 
 }
 /* ! Fin Main */
 /* ! Footer */

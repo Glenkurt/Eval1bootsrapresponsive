@@ -17,45 +17,64 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <div class="navbar-brand d-flex align-items-center">
-            <img
-              src="images/logo_colocas.jpg"
-              alt="logo_colocas"
-              width=""
-              height="125px"
-              class="img-fluid"
-            />
-            <h1 class="m-5">Comité Lorrain de Caisses à Savon</h1>
-          </div>
-          <!-- * Navbar Toggler-->
-          <!-- ? data--bs Ne fonctionne pas What is the fuck ?? -->
-          <!-- TODO Investigate-->
+    <!-- TODO RESPONSIVE, i don't know why am i strungling -->
+
+    <header class="container-fluid">
+      <div class="row">
+        <!-- <nav class="navbar navbar-expand-md navbar-light bg-light"> -->
+        <div class="col-12 col-lg-4">
+          <img
+            src="images/logo_colocas.jpg"
+            alt="logo_colocas"
+            width=""
+            height="125px"
+            class=""
+          />
+        </div>
+        <div class="col-8 col-lg-4">
+          <a class="navbar-brand">
+            <h1 class="mr-5 text-nowrap">Comité Lorrain de Caisses à Savon</h1>
+          </a>
+        </div>
+
+        <!-- * icons -->
+        <div>
+          <span class="material-icons"> facebook </span>
+          <span class="material-icons"> email </span>
+        </div>
+
+        <!-- TODO Investigate-->
+      </div>
+
+      <!-- * menu-->
+      <div class="row">
+        <div class="col-md-6 col-lg-7"></div>
+
+        <nav
+          class="
+            navbar navbar-expand-lg navbar-light
+            bg-light
+            col-md-6 col-lg-5
+          "
+        >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler float-right"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- * Fin toggler-->
-
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav me-auto">
+          <a class="navbar-brand" href="#"></a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page"
-                  >Acceuil</a
-                >
+                  >Acceuil
+                </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Pré inscription</a>
@@ -72,18 +91,23 @@
               <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+    <!-- * fin  menu-->
+    <!-- ? Content-->
     <main>
       <p>Dis is the fukin body</p>
     </main>
     <footer>
       <p>
         <span class="material-icons copyright"> copyright </span>
-        2021 <a href="#">COLOCAS</a>         
-     <!-- TODO Footer à paufiner-->
-    <!--   <div class="glenkurt"><a href="#">Réalisation Glenkurt</a> </div> </p>   --> 
+        2021 <a href="#">COLOCAS</a>
+        <!-- TODO Footer à paufiner-->
+        <!--   <div class="glenkurt"><a href="#">Réalisation Glenkurt</a> </div> </p>   -->
+      </p>
+      <!-- ? Fin Content-->
+      <!-- * Footer-->
     </footer>
 
     <!-- JavaScript Bootsrap-->
