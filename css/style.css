@@ -8,22 +8,40 @@
  
 */
 
+/*
+   ? A faire : 
+   ? Reseau sociaux pied de page
+   ? Content page d'acceuil
+   TODO pages galerie photo + import de la vidéo
+   ! Pages sous meun association
+ */
 
 /* ! @IMPORT  POLICES */
-
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #2B2D42;
+  color:#EF233C ;
 }
 
 /* ! Header */
 
+header {
+  padding: 7px;
+ background-color: #EDF2F4;
+}
+.navbar {
+  background-color: #EDF2F4;
+}
+
 h1 {
   color: #d90429;
-  font-size: 1.2rem;
+  font-size: 2rem;
+ 
 }
+
 
 /* ? Permet de changerla couleur du lien avec la classe "active" */
 .navbar-light .navbar-nav .active > .nav-link,
@@ -33,10 +51,14 @@ h1 {
   color: #d90429;
 }
 
-header  .material-icons {
- color: #d90429;
- float: right;
- margin: 0.7rem;
+header .material-icons {
+  color: #d90429;
+  float: right;
+  margin: 0.7rem;
+}
+
+.menu {
+ margin-left:78%;
 }
 /* * Hover */
 
@@ -47,20 +69,33 @@ header  .material-icons {
 
 h1:hover {
   color: #ef233c;
-/* zoom: 1.1;*/
+  /* zoom: 1.1;*/
 }
-
-
 
 /* ! Fin Header */
 
 /* ! Main */
-main {
-  background-color: #8d99ae;
-  color: #2b2d42;
-  height: 600px;
+main {  
+  background-color:  #8D99AE;
+  color: #d90429;
+  display: flex;    
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 5%;
+}
+
+.content {
+  width: 80%;
  
 }
+
+ .btn {
+  height: 75px;
+  width: 140px;  
+  margin-top: 7px;
+ }
+
 /* ! Fin Main */
 /* ! Footer */
 
@@ -68,6 +103,7 @@ footer {
   display: flex;
   justify-content: center;
   margin: 20px;
+  
 }
 
 /* ? me permet d'aligner l'icone avec le texte qui le suit */
