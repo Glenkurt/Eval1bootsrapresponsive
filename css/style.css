@@ -22,26 +22,30 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #2B2D42;
-  color:#EF233C ;
+  background-color: #2b2d42;
+  color: #ef233c;
 }
 
 /* ! Header */
 
 header {
   padding: 7px;
- background-color: #EDF2F4;
+  background-color: #edf2f4;
 }
 .navbar {
-  background-color: #EDF2F4;
+  background-color: #edf2f4;
 }
 
-h1 {
+h1,
+h2 {
   color: #d90429;
-  font-size: 2rem;
- 
+  font-size: 1.5rem;
+  margin-top: 7px;
 }
 
+.doc {
+  margin-top: 10px;
+}
 
 /* ? Permet de changerla couleur du lien avec la classe "active" */
 .navbar-light .navbar-nav .active > .nav-link,
@@ -57,9 +61,6 @@ header .material-icons {
   margin: 0.7rem;
 }
 
-.menu {
- margin-left:78%;
-}
 /* * Hover */
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -72,29 +73,69 @@ h1:hover {
   /* zoom: 1.1;*/
 }
 
+header .material-icons:hover {
+  font-size: 1.4rem;
+}
 /* ! Fin Header */
 
 /* ! Main */
-main {  
-  background-color:  #8D99AE;
-  color: #d90429;
-  display: flex;    
+main {
+  background-color: #8d99ae;
+  color: #2b2d42;
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 3%;
 }
 
 .content {
   width: 80%;
- 
 }
 
- .btn {
-  height: 75px;
-  width: 140px;  
+.btn {
+  height: 65px;
+  width: 140px;
   margin-top: 7px;
- }
+}
+article ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+article ul li a {
+  color: #ef233c;
+}
+
+/* * Images articles */
+article .images {
+  margin: 10px;
+}
+article p {
+  margin: 10px;
+  padding: 10px;
+}
+
+article {
+  width: 80%;
+}
+
+article h3 {
+  color: #d90429;
+  margin: 40px;
+}
+
+article video {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.source {
+  font-style: none;
+  color: #2b2d42;
+}
 
 /* ! Fin Main */
 /* ! Footer */
@@ -102,13 +143,20 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  margin: 20px;
-  
+
+  padding: 5px;
 }
 
 /* ? me permet d'aligner l'icone avec le texte qui le suit */
 .copyright {
   vertical-align: bottom;
+  font-style: none;
 }
-
 /* ! Fin Footer */
+/* ! MEDIA QUERIES */
+/* ? ajuster h1 header pour les plus petits écrans */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+}

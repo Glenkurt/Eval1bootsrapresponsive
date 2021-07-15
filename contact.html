@@ -56,13 +56,13 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="menu">
-            <ul class="navbar-nav mr-auto">
+          
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Acceuil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Galerie Photos</a>
+                <a class="nav-link" href="historique.html">Historique</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -77,10 +77,11 @@
                   Association
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Pré-inscription</a>
-                  <a class="dropdown-item" href="#">Réglement</a>
+                  <a class="dropdown-item disabled" href="#">Pré-inscription</a>
+                  <a class="dropdown-item" href="reglement.html">Réglement</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">assemblé général</a>
+                  <a class="dropdown-item disabled" href="#">assemblée générale</a>
+                  <a class="dropdown-item " href="calendrier.html">Calendrier</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -89,11 +90,12 @@
                 >
               </li>
             </ul>
-          </div>
+        
         </div>
       </nav>
     </header>
-    <main class="form">
+    <main>
+      <h2>Contact</h2>      
         <div class="content">
       <div class="mb-3">
         <label for="name" class="form-label">Votre nom</label>
@@ -142,16 +144,31 @@
 <button type="button" class="btn btn-outline-danger text-center">Envoyer</button>
 </div>
     </main>
-    <footer>
-        <p>
-          <span class="material-icons copyright"> copyright </span>
-          2021 <a href="index.html" class="ml-4">COLOCAS</a>
-          <!-- TODO Footer à paufiner-->
-            
-        </p>
-        <!-- ? Fin Content-->
-        <!-- * Footer-->
-      </footer>
+    <footer class="mr-2 mt-2">
+      <div>
+   <p>
+      <span class="material-icons copyright mr-2"> copyright </span>
+      <span class="mr-2">2021</span> <a href="index.html" class="mr-2">COLOCAS</a>
+  </p>
+      </div>
+      <!-- TODO Footer à paufiner-->
+      <!--   <div class="glenkurt"><a href="#">Réalisation Glenkurt</a> </div> </p>   -->
+    <div class="footer-right">
+  <p> <a
+      href="https://www.facebook.com/comite.lorrain.caissesasavon"
+      target="_blank"
+    >
+      <span class="material-icons copyright mr-2"> facebook </span>
+    </a>
+  <a href="contact.html">
+      <span class="material-icons copyright"> email </span>
+    </a> </p>
+
+    </div>
+
+    <!-- ? Fin Content-->
+    <!-- * Footer-->
+  </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
