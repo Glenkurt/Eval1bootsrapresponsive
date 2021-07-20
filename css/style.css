@@ -8,22 +8,17 @@
  
 */
 
-/*
-   ? A faire : 
-   ? Reseau sociaux pied de page
-   ? Content page d'acceuil
-   TODO pages galerie photo + import de la vidéo
-   ! Pages sous meun association
- */
-
 /* ! @IMPORT  POLICES */
-
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap");
+/* ! fin police */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #2b2d42;
   color: #ef233c;
+  font-family: 'Otomanopee One', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ! Header */
@@ -143,7 +138,6 @@ article video {
 footer {
   display: flex;
   justify-content: center;
-
   padding: 5px;
 }
 
@@ -156,7 +150,17 @@ footer {
 /* ! MEDIA QUERIES */
 /* ? ajuster h1 header pour les plus petits écrans */
 @media (max-width: 400px) {
-  h1 {
+  h1,
+  h2,
+  h3 {
     font-size: 1rem;
+  }
+
+  article .images {
+    width: 80%;
+  }
+
+  article a {
+    font-size: 0.9rem;
   }
 }
