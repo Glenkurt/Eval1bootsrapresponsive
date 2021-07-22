@@ -93,13 +93,13 @@ main {
   width: 140px;
   margin-top: 7px;
 }
-article ul li {
+main ul li {
   list-style: none;
   margin-bottom: 25px;
 }
 
-article ul li a {
-  color: #ef233c;
+main ul li a {
+  color: #2B2D42;
 }
 
 /* * Images articles */
@@ -132,6 +132,11 @@ article video {
   color: #2b2d42;
 }
 
+
+main ul li a:hover {
+  color: #d90429;
+}
+
 /* ! Fin Main */
 /* ! Footer */
 
@@ -149,7 +154,7 @@ footer {
 /* ! Fin Footer */
 /* ! MEDIA QUERIES */
 /* ? ajuster h1 header pour les plus petits écrans */
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   h1,
   h2,
   h3 {
